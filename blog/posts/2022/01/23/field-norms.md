@@ -54,7 +54,7 @@ Composition powers of $m_a$ are just powers of $a$,
 }
   $p(m_a) = 0$ as well.
 But since $p$ is monic and irreducible,
-  by definition it's also be minimal polynomial for $m_a$
+  by definition it's also the minimal polynomial for $m_a$
   in the linear algebra sense!
 So (by the Cayley-Hamilton Theorem) it must have the same roots
   (not counting multiplicity)
@@ -107,12 +107,11 @@ What we can do, though, is think of our coordinate space $\Q^3$
   as living in $M^3$ where $M$ is a splitting field of $a.$
 __Notice how this doesn't change the determinant__ of $[a]_{L/K}.$
 In this setting, $[a]_{L/K}$ does indeed have a full set of eigenvalues.
-Explicitly taking $M = \C$ and setting 
+Explicitly taking $M = \C,$
 \[
-    x^3 - 2
-    = (x - \prim)(x - \prim\zeta)(x - \prim\zeta\conj).
+    p(x) = x^3 - 2 = (x - \prim)(x - \prim\zeta)(x - \prim\zeta\conj).
 \]
-where $\zeta = e^{2\pi/3}$ and $\zeta\conj$ is the conjugate.
+where $\zeta = e^{2\pi i/3}$ and $\zeta\conj$ is the conjugate.
 The determinant, i.e. the norm, is then their product:
 \[
   N_{\Q(\prim)/\Q}(\prim)

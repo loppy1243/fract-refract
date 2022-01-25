@@ -1,0 +1,7 @@
+.blog-index p {
+  padding-left: 2em;
+}
+
+.blog-list-date-inline:before {
+  display: inline-block;
+}

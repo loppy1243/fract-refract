@@ -1,0 +1,20 @@
+{{if isblogpost}}
+
+{{initblog}}
+<div class="blog-navigation">
+  {{if isfirstblog}}
+    <span style="width: {{fill blognavwidth}};"></span>
+  {{else}}
+    <a href="{{prevblogpath}}" style="width: {{fill blognavwidth}};">&lt; {{prevbloginfo}}</a>
+  {{end}}
+
+  <a href="/blog" style="width: {{fill blognavwidth}}; display: flex; justify-content: center;">All Blog Entries</a>
+
+  {{if islastblog}}
+    <span style="width: {{fill blognavwidth}};"></span>
+  {{else}}
+    <a href="{{nextblogpath}}" style="width: {{fill blognavwidth}};">{{nextbloginfo}} &gt;</a>
+  {{end}}
+</div>
+
+{{end}}

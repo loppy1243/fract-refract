@@ -1,0 +1,29 @@
+<body class="layout--single">
+  {{ insert masthead.html }}
+  <div class="initial-content">
+    <div id="main" role="main">
+      {{if includeauthorbio}}
+      <div class="sidebar sticky">
+        <div itemscope itemtype="https://schema.org/Person">
+          <!--<div class="author__avatar">
+            <img src="/assets/avatar.jpg" alt="{{fill author}}" itemprop="image">
+          </div>-->
+          <div class="author__content">
+            <h3 class="author__name" itemprop="name">{{fill author}}</h3>
+            <p class="author__bio" itemprop="description">{{fill authorbio}}</p>
+          </div>
+          <div class="author__urls-wrapper">
+            <ul class="author__urls social-icons">
+              <p>Here are some links:</p>
+              <li><a href="mailto:{{fill email}}" rel="nofollow noopener noreferrer">{{fill email}}</a></li>
+              {{for (name,text,url) in links}}
+                <li><a href="{{fill url}}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-{{fill name}}" aria-hidden="true"></i> {{fill text}}</a></li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{else}}
+      <style> .franklin-content { width: 100%; } </style>
+      {{end}}
+      <div class="outer-content-wrapper">

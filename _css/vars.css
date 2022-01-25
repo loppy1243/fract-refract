@@ -1,0 +1,11 @@
+:root {
+  --sidebar-width: 17.5%;
+  --main-text-width: 32em;
+  --main-text-margin: calc(0.05*var(--main-text-width));
+}
+
+@media (min-width: 80em) {
+  :root {
+    --sidebar-width: calc(200px + 1em);
+  }
+}

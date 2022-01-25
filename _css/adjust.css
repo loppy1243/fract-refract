@@ -1,0 +1,67 @@
+/* on narrow device, reduce margins */
+/*@media (min-width: 940px) {
+  .franklin-content {
+    width: 78.8%;
+    padding-left: 0;
+    padding-right: 4.8%;
+  }
+}*/
+
+@media (min-width: 1024px) {
+  .blog-navigation {
+    padding-left: var(--main-text-margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .franklin-content {
+    width: calc(var(--main-text-width) + 3/2*var(--main-text-margin));
+    padding-left: var(--main-text-margin);
+    padding-right: calc(var(--main-text-margin)/2);
+  }
+}
+
+pre {
+  font-size: 17px;
+}
+
+.franklin-content code {
+  font-size: 14px;
+}
+
+.franklin-content .hljs {
+  font-size: 14px;
+}
+
+blockquote {
+  font-size: 90%;
+}
+
+.fndef-content {
+  line-height: 1.5em;
+}
+
+.franklin-content h1 {
+  padding-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.franklin-content a {
+  text-decoration: none;
+}
+
+/* For some reason,
+ * `h1, h2, h3 { a { color: ... } a:visited { color: ... } }` didn't work.
+ */
+h1 a { color: #1c1c1c !important; }
+h2 a { color: #1c1c1c !important; }
+h3 a { color: #1c1c1c !important; }
+h4 a { color: #1c1c1c !important; }
+h5 a { color: #1c1c1c !important; }
+
+h1 a:visited { color: #1c1c1c !important; }
+h2 a:visited { color: #1c1c1c !important; }
+h3 a:visited { color: #1c1c1c !important; }
+h4 a:visited { color: #1c1c1c !important; }
+h5 a:visited { color: #1c1c1c !important; }

@@ -1,3 +1,5 @@
+<script src="/libs/email.js"></script>
+
 <body class="layout--single">
   {{ insert masthead.html }}
   <div class="initial-content">
@@ -15,9 +17,9 @@
           <div class="author__urls-wrapper">
             <ul class="author__urls social-icons">
               <p>Here are some links:</p>
-              <li><a href="mailto:{{fill email}}" rel="nofollow noopener noreferrer">{{fill email}}</a></li>
+              <li><a style="padding-left: 1.25em;" href="{{fill email}}" rel="nofollow noopener noreferrer">&nbsp;Email</a></li>
               {{for (name,text,url) in links}}
-                <li><a href="{{fill url}}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-{{fill name}}" aria-hidden="true"></i> {{fill text}}</a></li>
+                <li><a href="{{fill url}}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-{{fill name}}" aria-hidden="true"></i>&nbsp;{{fill text}}</a></li>
               {{end}}
             </ul>
           </div>

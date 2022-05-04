@@ -13,13 +13,14 @@ currentyear = Dates.year(Dates.now())
 
 title = "Fractally Refracting Thoughts"
 author = "Nicholas Todoroff"
-email = "nd.todoroff@gmail.com"
-authorbio = """
-    <p>I read and think about too much math 100% of the time.
-    In the time left after that,
-        I like almost all things computer programming
-        (really love <a href="https://julialang.org" class="generic-extlink">Julia</a>)
-        and I watch too much anime.</p>"""
+# email = "javascript:decryptEmail('bG9wcHkxMjQzQGdtYWlsLmNvbQ==')"
+email = "mailto:nd.todoroff@gmail.com"
+authorbio = "<p>Math, physics, programming, more math...</p>"
+    # <p>I read and think about too much math 100% of the time.
+    # In the time left after that,
+    #     I like almost all things computer programming
+    #     (really love <a href="https://julialang.org" class="generic-extlink">Julia</a>)
+    #     and I watch too much anime.</p>"""
 includeauthorbio = true
 
 bloglist = Blogs.buildlist()
